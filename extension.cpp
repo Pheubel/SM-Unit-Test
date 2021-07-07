@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, version 3.0, as published by the
  * Free Software Foundation.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
@@ -36,6 +36,7 @@
  * @brief Implement extension code here.
  */
 
-Sample g_Sample;		/**< Global singleton for extension's main interface */
+SMUnitTest g_SMUnitTest;		/**< Global singleton for extension's main interface */
 
-SMEXT_LINK(&g_Sample);
+SMEXT_LINK(&g_SMUnitTest);
+

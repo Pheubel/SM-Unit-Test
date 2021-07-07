@@ -1,7 +1,7 @@
 # vim: set sts=2 ts=8 sw=2 tw=99 et ft=python:
 import os, sys
 
-projectName = 'sample'
+projectName = 'SM Unit Test'
 
 # smsdk_ext.cpp will be automatically added later
 sourceFiles = [
@@ -22,10 +22,10 @@ else:
   project.sources += [os.path.join(Extension.sm_root, 'public', 'smsdk_ext.cpp')]
 
 project.sources += sourceFiles
-  
+
 for sdk_name in Extension.sdks:
   sdk = Extension.sdks[sdk_name]
-  
+
   binary = Extension.HL2Config(project, projectName + '.ext.' + sdk.ext, sdk)
 
 Extension.extensions = builder.Add(project)
